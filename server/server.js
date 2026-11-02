@@ -7,6 +7,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import fs from 'node:fs';
 
+if (fs.existsSync('.env')) process.loadEnvFile();
+
 const app = express();
 const port = process.env.PORT || 3001;
 const secret = process.env.JWT_SECRET || 'daymark-local-development-secret';

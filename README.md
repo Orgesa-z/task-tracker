@@ -56,4 +56,4 @@ vite.config.js  Local development server settings
 
 ## A note about passwords
 
-Passwords are hashed before they are saved. For a public deployment, set `JWT_SECRET` to a long random secret and use HTTPS. The default secret is only suitable for local learning and development.
+Passwords are hashed before they are saved. For a public deployment, copy `.env.example` to `.env`, replace `JWT_SECRET` with a long random secret, and use HTTPS. The default secret is only suitable for local learning and development.
